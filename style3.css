@@ -66,39 +66,21 @@ nav ul li a {
     align-items: end;
 }
 
-.Carusel {
-    margin-top: 200px;
+.cont-img {
+    margin-top: 50px;
     width: 100%;
-    height: 350px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 1px;
-}
-
-.Slides {
+    text-align: center;
     display: flex;
-    width: calc(100% * 3);
-    animation: slide 15s infinite;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-.Slide {
-    flex: 1 0 100%;
-    transition: transform 10s ease-in-out;
-}
-
-.Slide img {
-    width: 33%;
-   height: 350px;
-   display: flex;
-    margin-top: 80px;
-}
-
-@keyframes slide {
-    0% { transform: translateX(0%);}
-    33% { transform: translateX(-100%);}
-    66% { transform: translateX(-200%);}
-    100% { transform: translateX(0%);}
+.imagen1 {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
 }
 
 .sec-hero {
