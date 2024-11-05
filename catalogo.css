@@ -31,6 +31,7 @@ nav {
 }
 
 
+
 .logo h1 {
     font-size: 24px;
     color: #333;
@@ -62,6 +63,50 @@ nav ul li a {
     
 }
 
+.iconos {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding */
+}
+
+.iconos img {
+    width: 20px;
+}
+
+.iconos li {
+    display: inline-block; /* Muestra los íconos en línea */
+    margin: 10px; /* Espaciado entre íconos */
+    position: relative; /* Necesario para posicionar el tooltip */
+}
+
+.icono {
+    width: 50px; /* Ajusta el tamaño de los íconos */
+    height: auto; /* Mantiene la proporción de la imagen */
+    cursor: pointer; /* Cambia el cursor a mano */
+    transition: transform 0.2s; /* Efecto de transición al hacer hover */
+}
+
+.icono:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del ícono al pasar el mouse */
+}
+
+.tooltip {
+    display: none; /* Oculta el tooltip por defecto */
+    position: absolute; /* Posiciona el tooltip en relación al li */
+    bottom: 100%; /* Coloca el tooltip arriba del ícono */
+    left: 50%; /* Centra el tooltip horizontalmente */
+    transform: translateX(-50%); /* Ajusta el tooltip para que esté centrado */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
+    color: white; /* Color del texto */
+    padding: 5px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    z-index: 10; /* Asegura que el tooltip esté por encima de otros elementos */
+}
+
+.iconos li:hover .tooltip {
+    display: block; /* Muestra el tooltip al pasar el mouse */
+}
+
 .home {
     align-items: end;
 }
@@ -77,7 +122,7 @@ nav ul li a {
 }
 
 .contenido {
-    background-color: #8814e0;
+    background-color: #bc68fd;
     max-width: 100%;
     color: #333;
     display: block;
