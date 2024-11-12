@@ -1,152 +1,141 @@
 * {
-    margin: 0;  
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #d4cdf4;
+    background-color: #f4f4f4;
     color: #333;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white; 
-    z-index: 1000;
+    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
-
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background-color: #e1c3f8;
-    
-    
 }
-
-
-
-.logo h1 {
-    font-size: 24px;
-    color: #333;
-}
-
-.logo img {
-    width: 45px;
-   
-}
-
-
 
 nav ul {
     display: flex;
     list-style: none;
-    
-    
 }
 
 nav ul li {
     margin-left: 20px;
-    align-items: center;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    
 }
 
 .iconos {
-    list-style-type: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el padding */
-}
-
-.iconos img {
-    width: 20px;
+    display: flex;
+    list-style: none;
 }
 
 .iconos li {
-    display: inline-block; /* Muestra los íconos en línea */
-    margin: 10px; /* Espaciado entre íconos */
-    position: relative; /* Necesario para posicionar el tooltip */
+    margin-left: 10px;
+    position: relative;
 }
 
 .icono {
-    width: 50px; /* Ajusta el tamaño de los íconos */
-    height: auto; /* Mantiene la proporción de la imagen */
-    cursor: pointer; /* Cambia el cursor a mano */
-    transition: transform 0.2s; /* Efecto de transición al hacer hover */
-}
-
-.icono:hover {
-    transform: scale(1.1); /* Aumenta el tamaño del ícono al pasar el mouse */
+    width: 30px;
+    cursor: pointer;
 }
 
 .tooltip {
-    display: none; /* Oculta el tooltip por defecto */
-    position: absolute; /* Posiciona el tooltip en relación al li */
-    bottom: 100%; /* Coloca el tooltip arriba del ícono */
-    left: 50%; /* Centra el tooltip horizontalmente */
-    transform: translateX(-50%); /* Ajusta el tooltip para que esté centrado */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
-    color: white; /* Color del texto */
-    padding: 5px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    z-index: 10; /* Asegura que el tooltip esté por encima de otros elementos */
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
 }
 
 .iconos li:hover .tooltip {
-    display: block; /* Muestra el tooltip al pasar el mouse */
-}
-
-.home {
-    align-items: end;
-}
-
-.navegacion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #ffffff;
-
-
-}
-
-.contenido {
-    background-color: #bc68fd;
-    max-width: 100%;
-    color: #333;
     display: block;
-    align-items: center;
+}
+
+.bienvenida {
+    text-align: center;
+    padding: 50px;
+    background-color: #e1c3f8;
+}
+
+.categorias {
+    padding: 50px;
+    text-align: center;
+}
+
+.categoria {
+    display: inline-block;
+    margin: 20px;
+}
+
+.categoria img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ofertas {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.producto {
+    display: inline-block;
+    margin: 20px;
+}
+
+.producto img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.precio-antes {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.nuevo-precio {
+    color: #e6007e;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
     padding: 20px;
-  
+    background-color: #333;
+    color: #fff;
 }
 
-.contenido h1 {
-    display: flex;
-    font-size: 36px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-}	
-
-.contenido p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+/* Agrega este estilo para los botones de compra */
+.comprar-btn {
+    background-color: #e6007e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-.contenido {
-    font-size: 
+.comprar-btn:hover {
+    background-color: #c7006e;
 }

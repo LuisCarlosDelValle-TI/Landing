@@ -3,60 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>
+    <title>Catálogo de Joyería</title>
     <link rel="stylesheet" href="catalogo.css">
 </head>
 <body>
-    <body>
-        <header>
-            <nav>
-                <div class="logo">
-
-                    <img src="/img/logo negro.png"
-                        alt="Logo">
-                </div>
-
-                <ul>
-                    <li><a href="#contenido">Ofertas</a></li>
-                    <li><a href="#cat">Categoría</a></li>
-                    <li><a href="#ofertas">Ofertas</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            
-                <ul class="iconos">
-                    <li>
-                        <img src="/img/usuario.png" alt="Usuario" class="icono">
-                        <span class="tooltip">Usuario</span>
-                    </li>
-                    <li>
-                        <img src="/img/envio.png" alt="Enviar" class="icono">
-                        <span class="tooltip">Envios</span>
-                    </li>
-                    <li>
-                        <img src="/img/me-gusta.png" alt="Me Gusta" class="icono">
-                        <span class="tooltip">Me Gusta</span>
-                    </li>
-                    <li>
-                        <img src="/img/mapas-y-banderas.png" alt="Mapas" class="icono">
-                        <span class="tooltip">Direcciones</span>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="bienvenida">
-            <div class="contenido"> 
-                <h1>Bienvenidos a nuestro catalogo</h1>
-                <p>En este sitio podras encontrar los mejores productos para tu hogar</p>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/img/logo.png" alt="Logo">
             </div>
-        </section>
+            <ul>
+                <li><a href="#contenido">Ofertas</a></li>
+                <li><a href="#cat">Categoría</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <ul class="iconos">
+                <li>
+                    <img src="/img/usuario.png" alt="Usuario" class="icono">
+                    <span class="tooltip">Usuario</span>
+                </li>
+                <li>
+                    <img src="/img/envio.png" alt="Enviar" class="icono">
+                    <span class="tooltip">Envios</span>
+                </li>
+                <li>
+                    <img src="/img/me-gusta.png" alt="Me Gusta" class="icono">
+                    <span class="tooltip">Me Gusta</span>
+                </li>
+                <li>
+                    <img src="/img/mapas-y-banderas.png" alt="Mapas" class="icono">
+                    <span class="tooltip">Direcciones</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <section>
-            <div class="cat"> 
-                <h1>Categorias</h1>
-                <p>En este sitio podras encontrar los mejores productos para tu hogar</p>
-            </div>
-        </section>
+    <section class="bienvenida">
+        <div class="contenido"> 
+            <h1>Bienvenidos a nuestro catálogo</h1>
+            <p>En este sitio podrás encontrar las mejores joyas para ti.</p>
+        </div>
+    </section>
 
+    <section class="categorias" id="cat">
+        <h1>Categorías</h1>
+        <div class="categoria">
+            <img src="/img/anillo.jpg" alt="Anillos">
+            <h3>Anillos</h3>
+        </div>
+        <div class="categoria">
+            <img src="/img/collar.jpg" alt="Collares">
+            <h3>Collares</h3>
+        </div>
+        <div class="categoria">
+            <img src="/img/pulsera.jpg" alt="Pulseras">
+            <h3>Pulseras</h3>
+        </div>
+    </section>
+
+    <section class="ofertas" id="ofertas">
+        <h2>Ofertas Especiales</h2>
+        <div class="producto">
+            <img src="/img/anillo_oferta.jpg" alt="Anillo en oferta">
+            <h3>Anillo con Diamante</h3>
+            <p><span class="precio-antes">$200.00</span> <span class="nuevo-precio">$150.00</span></p>
+            <button class="comprar-btn">Comprar</button>
+        </div>
+        <div class="producto">
+            <img src="/img/collar_oferta.jpg" alt="Collar en oferta">
+            <h3>Collar de Oro</h3>
+            <p><span class="precio-antes">$500.00</span> <span class="nuevo-precio">$400.00</span></p>
+            <button class="comprar-btn">Comprar</button>
+        </div>
+        <div class="producto">
+            <img src="/img/pulsera_oferta.jpg" alt="Pulsera en oferta">
+            <h3>Pulsera de Plata</h3>
+            <p><span class="precio-antes">$300.00</span> <span class="nuevo-precio">$250.00</span></p>
+            <button class="comprar-btn">Comprar</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Joyería NICE. Todos los Derechos Reservados</p>
+    </footer>
+
+    <script src="catalogo.js"></script>
 </body>
 </html>
