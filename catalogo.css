@@ -37,6 +37,10 @@ nav ul li a {
     font-weight: bold;
 }
 
+.logo img {
+    width: 45px;
+}
+
 .iconos {
     display: flex;
     list-style: none;

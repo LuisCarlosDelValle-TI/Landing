@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #9f75ff, #d9ceff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.form-container {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: #ac55f7;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ead5ff;
+}
+
+.or-login-with {
+    text-align: center;
+    margin: 1rem 0;
+    color: #555;
+}
+
+.icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: white;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.icon-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-button:hover {
+    background: #f9f9f9;
+}
+
