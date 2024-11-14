@@ -209,6 +209,10 @@ header, nav, .logo, nav ul {
     text-align: center;
     justify-content: space-between;
 }
+
+.content img {
+    border-radius: 20px;
+}
 .content h2 {
     font-size: 36px;
     color: #333;
@@ -221,16 +225,18 @@ header, nav, .logo, nav ul {
     text-align: justify;
 }
 
-.imagen {
+.imagen-content   {
     height: 300px;
     width: 250px;
   margin-left: 900px;
   border-radius: 30px;
     margin-top: 20px;
     display: flex;
+    text-align: center;
 }
 
 button {
+    margin-left: 280px;
     align-items: center;
     background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
     border: 0;
