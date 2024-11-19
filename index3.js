@@ -28,3 +28,13 @@ setInterval(() => {
 
 // Mostrar la primera imagen al cargar
 showSlide(currentIndex);
+
+document.addEventListener('DOMContentLoaded', function () {
+    var infoModal = document.getElementById('infoModal');
+    infoModal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget;
+        var info = button.getAttribute('data-info');
+        var modalBody = infoModal.querySelector('.modal-body');
+        modalBody.textContent = info;
+    });
+});

@@ -258,6 +258,7 @@ button {
     white-space: nowrap;
     cursor: pointer;
     transition: all 0.3s;
+    margin-bottom: 20px;
 }
 
 button:active, button:hover {
@@ -280,6 +281,29 @@ button:active {
     transform: scale(0.9);
 }
 
+@media (max-width: 768px) {
+    button {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 18px;
+    }
+}
+
+.caracteristicas {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.img-content {
+    margin-bottom: 20px; /* Añadir margen inferior */
+}
+
+@media (max-width: 768px) {
+    .img-content {
+        margin-bottom: 30px; /* Aumentar margen inferior en pantallas pequeñas */
+    }
+}
 .text a {
     color: white;
     text-decoration: none;
@@ -361,29 +385,53 @@ button:active {
 
 .info {
     display: flex;
-    justify-content: center;
-    height: 300px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0 25px;
+    background-color: ;
 }
 
 .info-respuesta {
-    align-items: center;
-    background-color: #e1c3f8;
+    flex: 1;
+    max-width: 600px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
 }
-
-.info-respuesta p{
-    text-align: justify;
-    align-items: center;
-    margin: 80px;
-   
-}
-
+  
 .info-imagen {
-    height: 300px;
+    flex: 1;
+    max-width: 400px;
 }
 
-.info-imagen img {
-    height: 300px;
+.responsive-img {
+    width: 100%;
+    height: auto;
 }
+
+@media (max-width: 768px) {
+    .info {
+        padding: 0 10px; /* Ajustar padding para pantallas pequeñas */
+    }
+
+    .info-respuesta {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .info-imagen {
+        max-width: 100%;
+    }
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 .contact {
     background-color: #333;
 }
