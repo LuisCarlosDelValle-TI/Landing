@@ -185,7 +185,7 @@ nav ul {
     font-size: 35px;
     left: 0;
     right: 0;
-    text-align: center;
+    text-align: center;color: #ffffff;
 }
 
 .content {
@@ -269,7 +269,7 @@ button:active {
 }
 
 .btn-catalogo {
-    margin-left: 40%;
+    margin-left: 25%;
 }
 
 .caracteristicas {
@@ -371,7 +371,6 @@ button:active {
     align-items: center;
     margin: 20px 0;
     padding: 0 25px;
-    background-color: ;
 }
 
 .info-respuesta {
@@ -434,6 +433,16 @@ button:active {
     color: cornsilk;
 }
 
+.ubicacion {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ubicacion a {
+    color: cornsilk;
+}
 
 footer {
     text-align: center;
